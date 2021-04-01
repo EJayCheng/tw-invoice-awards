@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "將 台灣統一發票中獎號碼 提供出 javascript 串接介面",
   "main": "./dist/index.js",
+  "repository": "https://github.com/EJayCheng/tw-invoice-awards",
   "scripts": {
     "prepublishOnly": "rm -rf dist && npm i && npm run build",
     "build": "tsc",
