@@ -1,0 +1,29 @@
+{
+  "name": "tw-invoice-awards",
+  "version": "1.0.0",
+  "description": "將 台灣統一發票中獎號碼 提供出 javascript 串接介面",
+  "main": "./dist/index.js",
+  "scripts": {
+    "prepublishOnly": "rm -rf dist && npm i && npm run build",
+    "build": "tsc",
+    "test": "jest",
+    "test:cov": "jest --coverage"
+  },
+  "author": "EJay Cheng",
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.22",
+    "@types/xml2js": "^0.4.8",
+    "jest": "^26.6.3",
+    "ts-jest": "^26.5.4",
+    "typescript": "^4.2.3"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "dayjs": "^1.10.4",
+    "xml2js": "^0.4.23"
+  }
+}
