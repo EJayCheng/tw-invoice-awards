@@ -10,7 +10,12 @@ import {
 } from "invoice-awards.dto";
 import { parseStringPromise } from "xml2js";
 
-export { InvoiceAwardInfo, InvoiceAwardPeriodType, InvoiceAwardNameType };
+export {
+  InvoiceAwardInfo,
+  InvoiceAwardPeriodType,
+  InvoiceAwardNameType,
+  InvoiceAwardCheckResult,
+};
 const DATA_URL = "https://invoice.etax.nat.gov.tw/invoice.xml";
 
 export class InvoiceAwards {
@@ -192,11 +197,3 @@ export class InvoiceAwards {
     InvoiceAwards.cacheTimer = null;
   }
 }
-
-// InvoiceAwards.enabledCache = true;
-// InvoiceAwards.fetchAwards(true).then((r) =>
-//   console.log(JSON.stringify(r[0], null, 2))
-// );
-
-// InvoiceAwards.fetchAwards();
-// InvoiceAwards.
