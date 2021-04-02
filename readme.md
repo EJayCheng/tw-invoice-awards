@@ -81,6 +81,23 @@ InvoiceAwards.cacheTime = 60 * 1000;
 
 // InvoiceAwards.fetchAwards(forceReload?:boolean): Promise<InvoiceAwardInfo[]>
 InvoiceAwards.fetchAwards().then(console.log).catch(console.error);
+/** 
+[{
+  title: '110年01月、02',
+  year: 2021,
+  rocYear: 110,
+  period: '1~2',
+  publishedAt: '2021-03-25 14:05:46',
+  awards: {
+    '特別獎': '80325690',
+    '特獎': '95201943',
+    '頭獎': [ '64613291', '00581856', '63105417' ],
+    '增開六獎': [ '295' ]
+  },
+  receiveAwardStartAt: '2021-04-06',
+  receiveAwardEndAt: '2021-07-05'
+}, ......]
+*/
 
 // InvoiceAwards.check(year:number, period:string, code:string):Promise<InvoiceAwardCheckResult>
 InvoiceAwards.check(2021, "1~2", code).then(console.log).catch(console.error);
